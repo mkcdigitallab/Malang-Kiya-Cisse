@@ -2,35 +2,26 @@
 
 Portfolio personnel de **Malang Kiya Cissé / MKC Digital Lab**.
 
-## Objectif
-Présenter mon parcours, mes projets, mes compétences et mes espaces de travail avec une identité moderne, claire et professionnelle.
+## Direction
+Le site est pensé comme une identité professionnelle, pas comme une simple galerie de dépôts :
+- hero clair et humain ;
+- sélection de projets plutôt qu'une liste exhaustive ;
+- distinction entre projets produits et laboratoire d'apprentissage ;
+- responsive mobile-first ;
+- dark/light mode ;
+- micro-interactions et motion respectant `prefers-reduced-motion` ;
+- liens directs vers GitHub, GitLab et CV ;
+- structure légère et rapide.
 
-Le portfolio met l'accent sur la progression, la conception, la qualité et la capacité à faire évoluer un projet.
+## Projets mis en avant
+1. Reservation-Salles — architecture, règles métier, tests, Docker et CI/CD.
+2. Fondé 44 — produit mobile-first autour d'une activité réelle.
+3. Carnet BI — gestion de cotisations.
+4. Signalement Urbain — service de signalement.
+5. FastFood MVC — apprentissage PHP/POO/MVC.
 
-## Stack
-- HTML5
-- CSS3
-- JavaScript vanilla
-- Google Fonts
-- Déploiement statique
-
-Le site reste volontairement léger : aucun framework lourd n'est nécessaire pour ce portfolio.
-
-## Liens
-- GitHub : https://github.com/mkcdigitallab
-- GitLab : https://gitlab.com/mkcdigitallab
-- CV : https://github.com/mkcdigitallab/cv-malang-kiya-cisse
-- Email : papac8443@gmail.com
-
-## Projets
-- Reservation-Salles
-- Fondé 44
-- FastFood MVC
-- Signalement Urbain
-- Gestion Étudiant
-- Bibliothèque Universitaire
-- VTC MVC
-- Formation Full-stack PHP
+## Stack du portfolio
+HTML, CSS et JavaScript natifs. Aucun framework n'est nécessaire pour ce site statique : l'objectif est de rester rapide, maintenable et indépendant.
 
 ## Déploiement
-Le site est conçu comme un Static Site. La racine du dépôt est le dossier publié.
+Static Site Render, avec déploiement automatique depuis `main`.
