@@ -84,8 +84,48 @@
 
 <section class="signal-section"><div class="signal-inner"><span>04</span><div><p>LA SUITE</p><h2>Une équipe. Un problème.<br><em>Un produit à faire grandir.</em></h2></div><div class="signal-mark">MKC<br><b>↗</b></div></div></section>
 
-<section id="contact" class="contact section"><div class="contact-left"><span class="eyebrow">PRENONS CONTACT</span><h2>Un problème à résoudre ?<br><em>Construisons la suite.</em></h2><p>Stage, alternance, collaboration ou projet réel : je cherche un environnement où apprendre vite, prendre des responsabilités et construire du solide.</p><a class="mail" href="mailto:papac8443@gmail.com">papac8443@gmail.com <span>↗</span></a></div><div class="contact-right"><a href="https://github.com/mkcdigitallab" target="_blank" rel="noreferrer"><small>GITHUB</small><b>@mkcdigitallab</b><span>↗</span></a><a href="https://gitlab.com/mkcdigitallab" target="_blank" rel="noreferrer"><small>GITLAB</small><b>@mkcdigitallab</b><span>↗</span></a><a href="https://malang-kiya-cisse-cv.onrender.com" target="_blank" rel="noreferrer"><small>CV</small><b>Malang Kiya Cissé</b><span>↗</span></a></div></section>
-</main>
+<section id="guestbook" class="guestbook section">
+<div class="guestbook-shell">
+<div class="guestbook-intro">
+<div><span class="index">04</span><span class="eyebrow">UN MOT, UNE IDÉE, UN COUP DE POUCE</span></div>
+<h2>Vous êtes passé par ici.<br><em>Laissez une trace.</em></h2>
+<p>Un retour, une idée, un encouragement ou simplement un 👋. Chaque message m'aide à continuer à construire et à progresser.</p>
+</div>
+<div class="guestbook-card">
+<div class="guestbook-orbit"><span>01</span><b>MKC</b><small>VISITEUR → CRÉATEUR</small></div>
+<div class="guestbook-actions">
+<button type="button" class="support-choice" data-support="Encouragement"><span>💚</span><b>Encourager</b><small>Un petit coup de force</small></button>
+<button type="button" class="support-choice" data-support="Idée"><span>💡</span><b>Partager une idée</b><small>Une piste pour la suite</small></button>
+<button type="button" class="support-choice" data-support="Bonjour"><span>👋</span><b>Dire bonjour</b><small>Juste passer faire signe</small></button>
+<button type="button" class="support-choice" data-support="Feedback"><span>✦</span><b>Donner un feedback</b><small>Ce que je peux améliorer</small></button>
+</div>
+<div class="guestbook-note"><span>Pas besoin de compte.</span><b>Votre message arrive directement dans ma boîte mail.</b><span>— Malang</span></div>
+</div>
+</div>
+</section>
+
+<section id="contact" class="contact section"><button type="button" class="guestbook-trigger" id="guestbookTrigger" aria-label="Laisser un message">Laisser un message ↗</button><div class="contact-left"><span class="eyebrow">PRENONS CONTACT</span><h2>Un problème à résoudre ?<br><em>Construisons la suite.</em></h2><p>Stage, alternance, collaboration ou projet réel : je cherche un environnement où apprendre vite, prendre des responsabilités et construire du solide.</p><a class="mail" href="mailto:papac8443@gmail.com">papac8443@gmail.com <span>↗</span></a></div><div class="contact-right"><a href="https://github.com/mkcdigitallab" target="_blank" rel="noreferrer"><small>GITHUB</small><b>@mkcdigitallab</b><span>↗</span></a><a href="https://gitlab.com/mkcdigitallab" target="_blank" rel="noreferrer"><small>GITLAB</small><b>@mkcdigitallab</b><span>↗</span></a><a href="https://malang-kiya-cisse-cv.onrender.com" target="_blank" rel="noreferrer"><small>CV</small><b>Malang Kiya Cissé</b><span>↗</span></a></div></section>
+<div class="guestbook-modal" id="guestbookModal" aria-hidden="true">
+<div class="guestbook-backdrop" data-close-guestbook></div>
+<div class="guestbook-dialog" role="dialog" aria-modal="true" aria-labelledby="guestbookTitle">
+<button class="guestbook-close" type="button" data-close-guestbook aria-label="Fermer">×</button>
+<div class="guestbook-dialog-head"><span class="eyebrow">UN PETIT MOT</span><span id="guestbookType">ENCOURAGEMENT</span></div>
+<h2 id="guestbookTitle">Qu'est-ce que vous voulez me laisser ?</h2>
+<form id="guestbookForm">
+<input type="hidden" name="_subject" value="Nouveau message depuis le portfolio — MKC">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_captcha" value="true">
+<input type="hidden" name="_url" value="https://malang-kiya-cisse-portfolio.onrender.com">
+<input type="hidden" name="type" id="guestbookSupportType" value="Encouragement">
+<label>Votre prénom <span>facultatif</span><input type="text" name="name" maxlength="60" placeholder="Ex. Awa"></label>
+<label>Votre email <span>facultatif</span><input type="email" name="email" placeholder="Pour vous répondre si vous le souhaitez"></label>
+<label>Votre message<textarea name="message" required minlength="3" maxlength="1000" rows="5" placeholder="Un mot, une idée, un retour…"></textarea></label>
+<label class="guestbook-consent"><input type="checkbox" name="consent" value="yes" required><span>J'accepte que ce message soit envoyé à Malang pour lui permettre de me répondre.</span></label>
+<button class="button button-main guestbook-submit" type="submit"><span>Envoyer le message</span><b>↗</b></button>
+<p class="guestbook-status" id="guestbookStatus" role="status" aria-live="polite"></p>
+</form>
+</div>
+</div></main>
 <footer><div><b>MKC</b> DIGITAL LAB</div><span>© 2026 · Dakar, Sénégal</span><a href="#home">↑ Retour</a></footer>
 <script src="script.js"></script>
 </body></html>
