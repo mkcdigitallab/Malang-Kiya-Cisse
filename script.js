@@ -1,0 +1,1 @@
+const root=document.documentElement;const saved=localStorage.getItem("mkc-theme");if(saved==="light")root.dataset.theme="light";document.getElementById("theme").addEventListener("click",()=>{const light=root.dataset.theme!=="light";if(light)root.dataset.theme="light";else delete root.dataset.theme;localStorage.setItem("mkc-theme",light?"light":"dark")});
