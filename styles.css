@@ -100,3 +100,15 @@
 /* Final mobile safety */
 @media (max-width:600px){.nav nav{display:none}.nav-actions{margin-left:auto}.nav{max-width:calc(100vw - 18px)}.mobile-nav{box-sizing:border-box;max-width:calc(100vw - 18px);overflow:hidden}.hero-grid,.section,.signal-section,footer{max-width:calc(100vw - 24px)}.hero-copy,.section-intro,.section-intro>div,.about-content,.about-columns,.contact-left,.contact-right,.guestbook-shell,.guestbook-intro,.guestbook-card{min-width:0}.hero-copy h1,.section-intro h2,.about h2,.contact h2,.guestbook-intro h2,.guestbook-dialog h2{overflow-wrap:anywhere}.hero-cta .button{max-width:100%}.guestbook-actions{grid-template-columns:1fr 1fr}.support-choice{min-width:0}.support-choice b,.support-choice small{overflow-wrap:anywhere}.guestbook-dialog{width:100%;max-width:560px}.guestbook-dialog-head{padding-right:42px}}
 @media (max-width:420px){.hero-cta{align-items:stretch}.hero-cta .button{width:100%;justify-content:space-between}.hero-cta .text-link{display:inline-block;margin-left:2px}.guestbook-actions{grid-template-columns:1fr}.support-choice{min-height:88px}.guestbook-note{display:block}.guestbook-note span,.guestbook-note b{display:block;margin:3px 0!important}.contact-right>a{min-width:0}.contact-right b{overflow-wrap:anywhere}}
+
+/* Visual polish: hierarchy, section markers and scroll navigation */
+:root{--section:#a78bfa;--section-soft:rgba(167,139,250,.16);--meta:#72e3ff}
+[data-theme=light]{--section:#5b45c7;--section-soft:rgba(91,69,199,.10);--meta:#167b92}
+.index{display:inline-flex;align-items:center;justify-content:center;min-width:34px;height:22px;padding:0 8px;margin-right:10px;border:1px solid var(--section);border-radius:999px;background:var(--section-soft);color:var(--section);font-size:10px;letter-spacing:.08em;font-weight:700;vertical-align:middle}
+.eyebrow{color:var(--meta)}
+.project-number{color:var(--acid);font-weight:700}.project-type{color:var(--meta)}
+.nav{transition:transform .42s cubic-bezier(.22,1,.36,1),opacity .3s ease,background .3s ease,border-color .3s ease,box-shadow .3s ease,height .3s ease,top .3s ease}
+.nav.nav-hidden{transform:translate(-50%,-145%);opacity:0;pointer-events:none}
+.nav.nav-scrolled{top:8px;height:58px;background:rgba(10,10,12,.88);border-color:rgba(255,255,255,.18);box-shadow:0 16px 45px rgba(0,0,0,.22)}
+[data-theme=light] .nav.nav-scrolled{background:rgba(244,242,237,.9);border-color:rgba(10,10,12,.16);box-shadow:0 16px 45px rgba(30,25,15,.10)}
+@media(max-width:600px){.index{min-width:32px;height:21px;padding:0 7px;margin-right:7px}.nav.nav-scrolled{top:5px;height:53px}.nav.nav-hidden{transform:translate(-50%,-135%)}}

@@ -45,3 +45,10 @@ guestbookForm?.addEventListener("submit",async e=>{
     submit.querySelector("span").textContent="Envoyer le message";
   }
 });
+
+/* Scroll-aware navigation */
+const nav=document.querySelector(".nav");
+let lastScrollY=window.scrollY;
+let scrollTick=false;
+const updateNav=()=>{const y=window.scrollY;nav?.classList.toggle("nav-scrolled",y>24);if(y<80){nav?.classList.remove("nav-hidden")}else if(y>lastScrollY+6){nav?.classList.add("nav-hidden")}else if(y<lastScrollY-6){nav?.classList.remove("nav-hidden")}lastScrollY=y;scrollTick=false};
+window.addEventListener("scroll",()=>{if(!scrollTick){requestAnimationFrame(updateNav);scrollTick=true;}},{passive:true});
