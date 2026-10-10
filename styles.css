@@ -137,10 +137,6 @@
  .mini-symbol [data-lucide]{width:22px;height:22px}
 }
 
-/* Theme toggle: show the icon for the active theme */
+/* Theme toggle: one icon at a time, replaced when the theme changes */
 #theme{display:inline-flex;align-items:center;justify-content:center;padding:0}
 #theme .theme-icon{width:16px;height:16px}
-#theme .theme-icon-sun{display:none}
-#theme .theme-icon-moon{display:block}
-[data-theme="light"] #theme .theme-icon-sun{display:block}
-[data-theme="light"] #theme .theme-icon-moon{display:none}
