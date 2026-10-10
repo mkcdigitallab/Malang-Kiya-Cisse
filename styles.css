@@ -137,9 +137,10 @@
  .mini-symbol [data-lucide]{width:22px;height:22px}
 }
 
-/* Theme toggle icon only */
+/* Theme toggle: show the icon for the active theme */
 #theme{display:inline-flex;align-items:center;justify-content:center;padding:0}
-#theme .theme-icon{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-#theme .theme-icon-moon{display:none}
-[data-theme="light"] #theme .theme-icon-sun{display:none}
-[data-theme="light"] #theme .theme-icon-moon{display:block}
+#theme .theme-icon{width:16px;height:16px}
+#theme .theme-icon-sun{display:none}
+#theme .theme-icon-moon{display:block}
+[data-theme="light"] #theme .theme-icon-sun{display:block}
+[data-theme="light"] #theme .theme-icon-moon{display:none}
