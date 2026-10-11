@@ -140,3 +140,19 @@
 /* Theme toggle: one icon at a time, replaced when the theme changes */
 #theme{display:inline-flex;align-items:center;justify-content:center;padding:0}
 #theme .theme-icon{width:16px;height:16px}
+
+/* Parcours académique */
+.education{margin-top:72px;padding-top:36px;border-top:1px solid var(--line)}
+.education-heading{display:flex;justify-content:space-between;align-items:start;gap:24px;margin-bottom:24px}
+.education-heading .eyebrow{color:var(--acid)}
+.education-heading p{max-width:430px;margin:0;color:var(--muted);font-size:12px}
+.education-list{border-top:1px solid var(--line)}
+.education-item{display:grid;grid-template-columns:14px 105px minmax(0,1fr) auto;gap:18px;align-items:start;padding:24px 0;border-bottom:1px solid var(--line);position:relative}
+.education-marker{width:8px;height:8px;border-radius:50%;background:var(--muted);margin-top:7px}
+.education-current .education-marker{background:var(--acid);box-shadow:0 0 0 5px color-mix(in srgb,var(--acid) 15%,transparent)}
+.education-date{font:600 9px "Space Grotesk",sans-serif;letter-spacing:.1em;color:var(--muted);padding-top:3px}
+.education-details h3{font:500 clamp(16px,2vw,21px)/1.25 "Space Grotesk",sans-serif;margin:0 0 7px;letter-spacing:-.025em}
+.education-details p{font-size:12px;color:var(--muted);margin:5px 0 0}
+.education-details .education-school{font-size:12px;color:var(--fg);font-weight:600}
+.education-status{font-size:9px;color:var(--acid);border:1px solid var(--line);border-radius:100px;padding:6px 9px;white-space:nowrap}
+@media(max-width:700px){.education{margin-top:48px}.education-heading{display:block}.education-heading p{margin-top:12px}.education-item{grid-template-columns:12px 1fr;gap:8px 13px;padding:20px 0}.education-marker{grid-column:1;grid-row:1}.education-date{grid-column:2;grid-row:1}.education-details{grid-column:2}.education-status{grid-column:2;justify-self:start;margin-top:4px}}
