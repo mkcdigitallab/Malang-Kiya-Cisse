@@ -146,12 +146,8 @@
 .education-heading .eyebrow{color:var(--acid)}
 .education-heading p{max-width:430px;margin:0;color:var(--muted);font-size:12px}
 
-
-.education-current 
-
 .education-details h3{font:500 clamp(16px,2vw,21px)/1.25 "Space Grotesk",sans-serif;margin:0 0 7px;letter-spacing:-.025em}
 .education-details p{font-size:12px;color:var(--muted);margin:5px 0 0}
-.education-details 
 
 @media(max-width:700px){
 
@@ -187,3 +183,82 @@
 @media(max-width:900px){.stack-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:600px){.stack{padding-top:75px}.stack-featured{padding:18px;border-radius:16px}.stack-featured-tags{gap:7px}.stack-featured-tags span{font-size:11px;padding:8px 9px}.stack-grid{grid-template-columns:1fr;gap:10px}.stack-card{padding:20px;border-radius:16px}.stack-card h3{margin-top:18px;font-size:20px}.stack-card p{min-height:0;margin-bottom:15px}.stack-note{font-size:10px;gap:9px}}
 @media(prefers-reduced-motion:reduce){.stack-card{transition:none}.stack-card:hover{transform:none}}
+
+
+/* Responsive QA: tablette, tactile et petits écrans */
+@media (min-width: 901px) and (max-width: 1100px) {
+  .nav { width: calc(100% - 28px); gap: 12px; }
+  .nav nav { gap: clamp(10px, 1.35vw, 16px); font-size: 12px; }
+  .logo { gap: 7px; }
+  .logo b { font-size: 12px; }
+  .availability { font-size: 10px; padding: 7px 8px; }
+  .nav-actions { gap: 6px; }
+  .hero-grid { width: calc(100% - 56px); grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr); gap: 28px; }
+  .hero-copy h1 { font-size: clamp(54px, 6.1vw, 72px); letter-spacing: -.065em; }
+  .intro { font-size: 16px; }
+  .hero-stage { min-width: 0; height: 450px; }
+  .identity-card { width: min(300px, 100%); }
+  .avatar { height: 315px; }
+  .orbit-1 { width: 370px; height: 370px; }
+  .orbit-2 { width: 420px; height: 235px; }
+  .floating-code { right: 0; bottom: 12px; }
+  .section { width: calc(100% - 56px); }
+  .section-intro { gap: 35px; }
+  .section-intro > div:last-child { gap: 28px; }
+  .stack-grid { gap: 10px; }
+  .stack-card { padding: 18px; }
+  .stack-card h3 { font-size: 20px; }
+  .contact { gap: 45px; }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .hero { padding-top: 120px; }
+  .hero-grid { width: calc(100% - 48px); }
+  .hero-copy h1 { font-size: clamp(58px, 8vw, 78px); }
+  .hero-stage { height: 455px; }
+  .identity-card { width: min(300px, 72vw); }
+  .avatar { height: 315px; }
+  .orbit-1 { width: 360px; height: 360px; }
+  .orbit-2 { width: 410px; height: 225px; }
+  .floating-code { right: max(0px, calc((100% - 360px) / 2)); bottom: 5px; }
+  .section-intro > div:last-child { min-width: 0; }
+  .section-intro h2, .about h2, .contact h2 { overflow-wrap: anywhere; }
+  .stack-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .support-icon { display: inline-grid !important; place-items: center; }
+}
+
+@media (max-width: 900px) {
+  .nav { width: calc(100% - 24px); }
+  .nav-actions { flex-shrink: 0; }
+  .nav .menu { display: inline-flex; align-items: center; justify-content: center; }
+  .mobile-nav { left: 12px; right: 12px; max-width: none; }
+  .mobile-nav a { overflow-wrap: anywhere; }
+}
+
+@media (max-width: 420px) {
+  .hero-cta { flex-direction: column; align-items: stretch; gap: 10px; }
+  .hero-cta .button { width: 100%; min-width: 0; }
+  .hero-cta .text-link { align-self: flex-start; margin: 0; padding: 8px 0; }
+  .identity-card { max-width: calc(100vw - 70px); }
+  .identity-name { font-size: 22px; }
+  .floating-code { max-width: 175px; }
+  .stack-featured-tags span { min-width: 0; overflow-wrap: anywhere; }
+}
+
+.support-icon {
+  display: inline-grid !important;
+  place-items: center;
+  flex: 0 0 30px;
+  vertical-align: middle;
+}
+.support-icon [data-lucide] { display: block; flex-shrink: 0; }
+.button [data-lucide], .text-link [data-lucide], .contact-right [data-lucide], footer [data-lucide] { flex-shrink: 0; }
+
+@media (hover: none), (pointer: coarse) {
+  .cursor, .cursor-dot { display: none !important; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nav, .work-card, .compact-card, .support-choice { transition: none !important; }
+  .nav.nav-hidden { transform: translateX(-50%); opacity: 1; pointer-events: auto; }
+}
