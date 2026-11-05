@@ -31,9 +31,9 @@ section{margin:0 0 20px}
 .section-title{display:flex;align-items:center;gap:10px;margin:0 0 9px;font:800 10px "Manrope",sans-serif;letter-spacing:.13em;text-transform:uppercase;color:var(--accent)}
 .section-title:after{content:"";height:1px;background:var(--line);flex:1}
 .profile{font-size:10.5px;line-height:1.62;color:#505c55;max-width:690px}
-.skills{display:grid;grid-template-columns:1fr 1fr;gap:7px 22px}
+.skills{display:grid;grid-template-columns:1fr;gap:5px}
 .skill{font-size:9.4px;line-height:1.5;color:#59655e}.skill b{color:#303a36}
-.projects{display:grid;grid-template-columns:1fr 1fr;column-gap:25px;row-gap:12px}
+.projects{display:grid;grid-template-columns:1fr;row-gap:9px}
 .project{position:relative;padding:0 0 10px 25px;border-bottom:1px solid var(--line);break-inside:avoid}
 .project-number{position:absolute;left:0;top:1px;color:#94a59a;font:700 9px "Manrope",sans-serif}
 .project-head{display:flex;justify-content:space-between;gap:8px;align-items:baseline;margin-bottom:4px}
@@ -41,7 +41,7 @@ section{margin:0 0 20px}
 .project .type{font:700 7px "Manrope",sans-serif;letter-spacing:.07em;text-transform:uppercase;color:#789184;white-space:nowrap}
 .project p{margin:0;color:#59655e;font-size:9px;line-height:1.48}
 .stack{margin-top:5px;font-size:8px;color:#718c7e;font-weight:600}
-.bottom{display:grid;grid-template-columns:1.15fr .85fr;gap:28px}
+.bottom{display:block}
 .education{margin-bottom:9px}
 .education b{display:block;font:700 9px/1.4 "Manrope",sans-serif;color:#303a36}
 .education span{display:block;margin-top:2px;font-size:8px;line-height:1.45;color:var(--muted)}
@@ -52,7 +52,7 @@ footer{display:flex;justify-content:space-between;gap:12px;padding:10px 54px;bor
  body{padding:10px 7px 22px}.sheet{min-height:0}
  header{grid-template-columns:1fr 82px;gap:12px;padding:25px 20px 20px}
  .photo{width:80px;height:96px}h1{font-size:26px}.contacts{font-size:8px;gap:5px 10px}
- main{padding:21px 20px 14px}.skills,.projects,.bottom{grid-template-columns:1fr}
+ main{padding:21px 20px 14px}.skills,.projects{grid-template-columns:1fr}
  .projects{row-gap:10px}footer{padding:10px 20px}
 }
 @page{size:A4;margin:0}
@@ -68,11 +68,11 @@ footer{display:flex;justify-content:space-between;gap:12px;padding:10px 54px;bor
  section{margin-bottom:4.5mm}.section-title{font-size:6.6pt;margin-bottom:1.8mm}
  .profile{font-size:7pt;line-height:1.45}
  .skills{gap:1.2mm 6mm}.skill{font-size:6.5pt;line-height:1.4}
- .projects{column-gap:6mm;row-gap:2.5mm}
+ .projects{row-gap:2mm}
  .project{padding:0 0 2mm 5mm}.project-number{font-size:6pt}
  .project-head{margin-bottom:.7mm}.project h3{font-size:8pt}.project .type{font-size:5pt}
  .project p{font-size:6.2pt;line-height:1.35}.stack{font-size:5.6pt;margin-top:.7mm}
- .bottom{gap:7mm}.education{margin-bottom:1.8mm}
+ .bottom{display:block}.education{margin-bottom:1.8mm}
  .education b{font-size:6.3pt}.education span{font-size:5.7pt;margin-top:.4mm}
  .languages{font-size:6.3pt}.availability{font-size:5.8pt;margin-top:1.5mm}
  footer{height:11mm;padding:3mm 15mm;font-size:5.3pt}
