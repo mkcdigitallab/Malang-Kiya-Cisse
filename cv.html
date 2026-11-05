@@ -1,175 +1,130 @@
 <!doctype html>
 <html lang="fr">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="CV de Malang Kiya Cissé, développeur web et mobile à Dakar.">
-<meta name="theme-color" content="#102d2a">
+<meta name="theme-color" content="#f5f6f2">
 <title>CV — Malang Kiya Cissé</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--ink:#172522;--deep:#102d2a;--teal:#28766b;--lime:#d5f36a;--muted:#65736f;--paper:#fffefa;--soft:#eef3ef;--rule:#dce4df}
+:root{--paper:#fffefa;--canvas:#f1f3ef;--ink:#303a36;--muted:#68736d;--sage:#8da99a;--sage-pale:#e9efea;--line:#e2e7e1;--accent:#547568}
 *{box-sizing:border-box}
-html{background:#e8eeea}
-body{margin:0;padding:28px 16px 40px;background:#e8eeea;color:var(--ink);font:14px/1.5 "DM Sans",sans-serif}
+html{background:var(--canvas)}
+body{margin:0;padding:26px 16px 38px;background:var(--canvas);color:var(--ink);font:14px/1.55 "DM Sans",sans-serif}
 a{color:inherit;text-decoration:none}
-.toolbar{width:min(100%,900px);margin:0 auto 14px;display:flex;justify-content:space-between;align-items:center}
-.back{font-size:12px;color:#52645e}.back:hover{color:var(--teal)}
-.actions{display:flex;gap:8px}
-.btn{border:1px solid #cbd6d0;border-radius:5px;padding:9px 13px;background:#fffefa;color:var(--ink);font:600 11px "DM Sans";cursor:pointer}
-.btn.primary{background:var(--deep);border-color:var(--deep);color:white}
-.sheet{width:min(100%,900px);min-height:1120px;margin:0 auto;background:var(--paper);box-shadow:0 22px 70px #17352a18;overflow:hidden}
-.hero{position:relative;display:grid;grid-template-columns:1fr 118px;gap:28px;align-items:center;padding:39px 46px 30px;background:var(--deep);color:#fff}
-.hero:after{content:"";position:absolute;left:46px;bottom:0;width:54px;height:4px;background:var(--lime)}
-.eyebrow{font:700 9px "Manrope",sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--lime)}
-h1{font:800 34px/1.05 "Manrope",sans-serif;letter-spacing:-.055em;margin:10px 0 6px}
-.role{font:700 11px "Manrope",sans-serif;letter-spacing:.13em;text-transform:uppercase;color:#8fd8ca}
-.tagline{font-size:11px;color:#d3e0dc;margin:9px 0 0}
-.photo{width:112px;height:132px;object-fit:cover;object-position:center 25%;border:2px solid #ffffff35;border-radius:2px}
-.contacts{display:flex;flex-wrap:wrap;gap:6px 17px;margin-top:17px;color:#d7e1dd;font-size:9px}
-.contacts b{color:#fff;font-weight:700;margin-right:4px}
-.layout{display:grid;grid-template-columns:minmax(0,1.72fr) minmax(215px,.88fr);min-height:900px}
-.primary{padding:27px 31px 24px 46px}
-.sidebar{padding:29px 27px;background:var(--soft);border-left:1px solid #e3eae5}
-section{margin:0 0 22px}
-.section-title{display:flex;align-items:center;gap:9px;margin:0 0 11px;font:800 10px "Manrope",sans-serif;letter-spacing:.15em;text-transform:uppercase;color:var(--teal)}
-.section-title:after{content:"";height:1px;background:var(--rule);flex:1}
-.profile{font-size:10.5px;line-height:1.65;color:#43534e}
-.project{position:relative;padding:0 0 12px 28px;margin:0 0 12px;border-bottom:1px solid var(--rule);break-inside:avoid}
-.project:last-child{border-bottom:0;margin-bottom:0;padding-bottom:0}
-.project-number{position:absolute;left:0;top:0;font:700 10px "Manrope",sans-serif;color:#8b9a94}
+.toolbar{width:min(100%,820px);margin:0 auto 13px;display:flex;justify-content:space-between;align-items:center}
+.back{font-size:12px;color:var(--muted)}.back:hover{color:var(--accent)}
+.actions{display:flex;gap:8px}.btn{border:1px solid #d8dfd8;border-radius:6px;padding:9px 13px;background:var(--paper);color:var(--ink);font:600 11px "DM Sans";cursor:pointer}
+.btn.primary{background:#e6ede7;border-color:#d2ded5;color:#405b4e}
+.sheet{width:min(100%,820px);margin:0 auto;background:var(--paper);box-shadow:0 12px 48px #34463b12;min-height:1120px}
+header{display:grid;grid-template-columns:1fr 112px;gap:28px;align-items:center;padding:39px 54px 27px;border-bottom:1px solid var(--line)}
+.eyebrow{font:700 9px "Manrope",sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}
+h1{font:800 32px/1.08 "Manrope",sans-serif;letter-spacing:-.045em;margin:9px 0 5px;color:#27332e}
+.role{font:700 11px "Manrope",sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#718c7e}
+.tagline{font-size:11px;color:var(--muted);margin:8px 0 0}
+.photo{width:108px;height:126px;object-fit:cover;object-position:center 25%;border-radius:3px;border:1px solid var(--line)}
+.contacts{display:flex;flex-wrap:wrap;gap:5px 17px;margin-top:15px;color:var(--muted);font-size:9px}
+.contacts b{color:var(--ink);font-weight:700;margin-right:3px}
+main{padding:25px 54px 20px}
+section{margin:0 0 20px}
+.section-title{display:flex;align-items:center;gap:10px;margin:0 0 9px;font:800 10px "Manrope",sans-serif;letter-spacing:.13em;text-transform:uppercase;color:var(--accent)}
+.section-title:after{content:"";height:1px;background:var(--line);flex:1}
+.profile{font-size:10.5px;line-height:1.62;color:#505c55;max-width:690px}
+.skills{display:grid;grid-template-columns:1fr;gap:5px}
+.skill{font-size:9.4px;line-height:1.5;color:#59655e}.skill b{color:#303a36}
+.projects{display:grid;grid-template-columns:1fr;row-gap:9px}
+.project{position:relative;padding:0 0 10px 25px;border-bottom:1px solid var(--line);break-inside:avoid}
+.project-number{position:absolute;left:0;top:1px;color:#94a59a;font:700 9px "Manrope",sans-serif}
 .project-head{display:flex;justify-content:space-between;gap:8px;align-items:baseline;margin-bottom:4px}
-.project h3{margin:0;font:800 13px "Manrope",sans-serif;letter-spacing:-.02em;color:var(--ink)}
-.project .type{font:700 7px "Manrope",sans-serif;letter-spacing:.1em;color:var(--teal);text-transform:uppercase;white-space:nowrap}
-.project p{margin:0;color:#52615c;font-size:9.3px;line-height:1.48}
-.stack{margin-top:5px;font-size:8px;line-height:1.4;color:#28766b;font-weight:600}
-.side-block{margin-bottom:22px;break-inside:avoid}
-.side-block .section-title{font-size:9px;margin-bottom:9px}
-.skill-group{margin-bottom:9px;font-size:9px;line-height:1.48;color:#53615c}
-.skill-group b{display:block;color:var(--ink);font:800 9px "Manrope",sans-serif;margin-bottom:2px}
-.method-list{list-style:none;padding:0;margin:0}
-.method-list li{font-size:9px;color:#53615c;padding:4px 0;border-bottom:1px solid #dce5df}
-.method-list li:last-child{border:0}
-.education{margin-bottom:11px}
-.education b{display:block;font:800 9px/1.4 "Manrope",sans-serif;color:var(--ink)}
-.education span{display:block;margin-top:2px;font-size:8px;line-height:1.45;color:#63716b}
-.languages{font-size:9px;line-height:1.65;color:#53615c}
-.availability{font-size:8.5px;line-height:1.5;color:#53615c;margin-top:8px}
-.footer{display:flex;justify-content:space-between;gap:12px;padding:10px 46px;border-top:1px solid var(--rule);color:#84918b;font:700 7px "Manrope",sans-serif;letter-spacing:.12em}
-@media(max-width:700px){
- body{padding:12px 8px 24px}.sheet{min-height:0}
- .hero{grid-template-columns:1fr 84px;gap:12px;padding:26px 20px 24px}
- .hero:after{left:20px}h1{font-size:27px}.photo{width:82px;height:100px}
- .contacts{gap:5px 12px;font-size:8px}
- .layout{grid-template-columns:1fr}
- .primary{padding:24px 20px 8px}
- .sidebar{padding:23px 20px;border-left:0;border-top:1px solid #e3eae5}
- .footer{padding:10px 20px}
+.project h3{margin:0;font:800 12px "Manrope",sans-serif;color:#303a36}
+.project .type{font:700 7px "Manrope",sans-serif;letter-spacing:.07em;text-transform:uppercase;color:#789184;white-space:nowrap}
+.project p{margin:0;color:#59655e;font-size:9px;line-height:1.48}
+.stack{margin-top:5px;font-size:8px;color:#718c7e;font-weight:600}
+.bottom{display:block}
+.education{margin-bottom:9px}
+.education b{display:block;font:700 9px/1.4 "Manrope",sans-serif;color:#303a36}
+.education span{display:block;margin-top:2px;font-size:8px;line-height:1.45;color:var(--muted)}
+.languages{font-size:9px;line-height:1.7;color:#59655e}
+.availability{font-size:8.5px;color:var(--muted);margin-top:8px}
+footer{display:flex;justify-content:space-between;gap:12px;padding:10px 54px;border-top:1px solid var(--line);color:#8a958e;font:700 7px "Manrope",sans-serif;letter-spacing:.1em}
+@media(max-width:650px){
+ body{padding:10px 7px 22px}.sheet{min-height:0}
+ header{grid-template-columns:1fr 82px;gap:12px;padding:25px 20px 20px}
+ .photo{width:80px;height:96px}h1{font-size:26px}.contacts{font-size:8px;gap:5px 10px}
+ main{padding:21px 20px 14px}.skills,.projects{grid-template-columns:1fr}
+ .projects{row-gap:10px}footer{padding:10px 20px}
 }
 @page{size:A4;margin:0}
 @media print{
  html,body{width:210mm;height:297mm;margin:0;padding:0;background:#fff;-webkit-print-color-adjust:exact;print-color-adjust:exact}
- body{font-size:9pt}
- .toolbar{display:none}
+ body{font-size:9pt}.toolbar{display:none}
  .sheet{width:210mm;height:297mm;min-height:0;margin:0;box-shadow:none;overflow:hidden}
- .hero{height:47mm;grid-template-columns:1fr 27mm;gap:8mm;padding:9mm 12mm 7mm}
- .hero:after{left:12mm;width:14mm;height:1mm}
- h1{font-size:25pt;margin:2.5mm 0 1.5mm}
- .eyebrow{font-size:6.5pt}.role{font-size:7pt}.tagline{font-size:7pt;margin-top:2mm}
- .photo{width:26mm;height:31mm}
- .contacts{font-size:6.2pt;gap:1.2mm 4mm;margin-top:3mm}
- .layout{height:239mm;min-height:0;grid-template-columns:minmax(0,1.72fr) minmax(0,.88fr)}
- .primary{padding:7mm 7mm 5mm 12mm}
- .sidebar{padding:7mm 7mm 5mm;background:var(--soft);border-left:1px solid #e3eae5}
- section{margin-bottom:5mm}
- .section-title{font-size:6.8pt;margin-bottom:2.3mm}
- .profile{font-size:7.2pt;line-height:1.5}
- .project{padding:0 0 2.7mm 6mm;margin:0 0 2.7mm}
- .project-number{font-size:7pt}.project-head{margin-bottom:1mm}
- .project h3{font-size:8.5pt}.project .type{font-size:5.2pt}
- .project p{font-size:6.6pt;line-height:1.35}
- .stack{font-size:5.8pt;margin-top:1mm}
- .side-block{margin-bottom:5mm}
- .side-block .section-title{font-size:6.2pt;margin-bottom:2mm}
- .skill-group{font-size:6.4pt;line-height:1.38;margin-bottom:2mm}
- .skill-group b{font-size:6.5pt;margin-bottom:.5mm}
- .method-list li{font-size:6.3pt;padding:1mm 0}
- .education{margin-bottom:2.3mm}
- .education b{font-size:6.4pt}.education span{font-size:5.8pt;margin-top:.5mm}
- .languages{font-size:6.4pt}.availability{font-size:6pt;margin-top:2mm}
- .footer{height:11mm;padding:3mm 12mm;font-size:5.5pt}
+ header{height:43mm;grid-template-columns:1fr 27mm;gap:7mm;padding:8mm 15mm 6mm}
+ h1{font-size:24pt;margin:2mm 0 1mm}.eyebrow{font-size:6pt}.role{font-size:7pt}
+ .tagline{font-size:6.8pt;margin-top:1.5mm}.photo{width:25mm;height:30mm}
+ .contacts{font-size:6pt;gap:1mm 4mm;margin-top:2.5mm}
+ main{height:243mm;padding:6mm 15mm 4mm}
+ section{margin-bottom:4.5mm}.section-title{font-size:6.6pt;margin-bottom:1.8mm}
+ .profile{font-size:7pt;line-height:1.45}
+ .skills{gap:1.2mm 6mm}.skill{font-size:6.5pt;line-height:1.4}
+ .projects{row-gap:2mm}
+ .project{padding:0 0 2mm 5mm}.project-number{font-size:6pt}
+ .project-head{margin-bottom:.7mm}.project h3{font-size:8pt}.project .type{font-size:5pt}
+ .project p{font-size:6.2pt;line-height:1.35}.stack{font-size:5.6pt;margin-top:.7mm}
+ .bottom{display:block}.education{margin-bottom:1.8mm}
+ .education b{font-size:6.3pt}.education span{font-size:5.7pt;margin-top:.4mm}
+ .languages{font-size:6.3pt}.availability{font-size:5.8pt;margin-top:1.5mm}
+ footer{height:11mm;padding:3mm 15mm;font-size:5.3pt}
 }
 </style>
 </head>
 <body>
-<div class="toolbar">
-<a class="back" href="index.html">← Retour au portfolio</a>
-<div class="actions"><button class="btn" onclick="window.history.back()">Retour</button><button class="btn primary" onclick="window.print()">Télécharger / Imprimer en PDF</button></div>
-</div>
-<main class="sheet">
-<header class="hero">
+<div class="toolbar"><a class="back" href="index.html">← Retour au portfolio</a><div class="actions"><button class="btn" onclick="window.history.back()">Retour</button><button class="btn primary" onclick="window.print()">Télécharger / Imprimer en PDF</button></div></div>
+<article class="sheet">
+<header>
 <div>
-<div class="eyebrow">Portfolio professionnel · Dakar, Sénégal</div>
+<div class="eyebrow">Curriculum vitae · Dakar, Sénégal</div>
 <h1>Malang Kiya Cissé</h1>
-<div class="role">Développeur web &amp; mobile · Full-Stack</div>
-<p class="tagline">Des applications utiles, du besoin métier à la mise en production.</p>
+<div class="role">Développeur web et mobile</div>
+<p class="tagline">Concevoir des applications utiles, du besoin métier à la mise en production.</p>
 <div class="contacts">
-<span><b>Tél.</b> +221 78 215 60 19</span>
-<span><b>Email</b> papac8443@gmail.com</span>
-<span><b>GitHub</b> github.com/mkcdigitallab</span>
-<span><b>Portfolio</b> malang-kiya-cisse-portfolio.onrender.com</span>
+<span><b>Tél.</b> +221 78 215 60 19</span><span><b>Email</b> papac8443@gmail.com</span>
+<span><b>GitHub</b> github.com/mkcdigitallab</span><span><b>Portfolio</b> malang-kiya-cisse-portfolio.onrender.com</span>
 </div>
 </div>
 <img class="photo" src="data:image/webp;base64,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" alt="Portrait de Malang Kiya Cissé">
 </header>
-<div class="layout">
-<div class="primary">
-<section>
-<h2 class="section-title">Profil</h2>
-<p class="profile">Développeur web et mobile en formation à Orange Digital Center / Sonatel Academy. Je conçois des applications en travaillant sur les interfaces, la logique métier, les bases de données et l’intégration des fonctionnalités. Je m’intéresse particulièrement à la structuration du code, à la compréhension des besoins réels, aux tests et à la qualité des solutions livrées.</p>
-</section>
-<section>
-<h2 class="section-title">Projets sélectionnés</h2>
-<article class="project"><span class="project-number">01</span><div class="project-head"><h3>SunuGox</h3><span class="type">Plateforme civique</span></div><p>Application de signalement et de suivi des problèmes urbains. Les citoyens transmettent des signalements, puis les services concernés suivent leur prise en charge jusqu'à la résolution.</p><div class="stack">PHP · Laravel · JavaScript · Base de données relationnelle</div></article>
-<article class="project"><span class="project-number">02</span><div class="project-head"><h3>FlexPay Sénégal</h3><span class="type">Fintech · QR Code</span></div><p>Portefeuille numérique avec gestion des rôles, dépôts, transferts entre utilisateurs et historique des transactions. Intégration d'un parcours de transfert par QR Code.</p><div class="stack">Laravel · PHP · Inertia · Vue.js · MariaDB · QR Code</div></article>
-<article class="project"><span class="project-number">03</span><div class="project-head"><h3>Réservation-Salles</h3><span class="type">Application métier</span></div><p>Gestion des salles et des réservations : validation des demandes, règles de disponibilité, prévention des chevauchements et suivi des opérations.</p><div class="stack">Laravel · PHP · PostgreSQL · Docker · GitLab CI</div></article>
-<article class="project"><span class="project-number">04</span><div class="project-head"><h3>Fondé 44</h3><span class="type">Commerce · Mobile-first</span></div><p>Application de gestion et de vente de produits alimentaires, pensée pour simplifier la présentation des produits, les commandes et le suivi de l'activité sur téléphone.</p><div class="stack">Laravel · Vue.js · PWA · API · Base de données</div></article>
-</section>
-</div>
-<aside class="sidebar">
-<section class="side-block">
-<h2 class="section-title">Stack technique</h2>
-<div class="skill-group"><b>Langages</b>PHP, JavaScript, TypeScript, HTML5, CSS3</div>
-<div class="skill-group"><b>Frameworks &amp; runtime</b>Laravel, Vue.js, Node.js, Express</div>
-<div class="skill-group"><b>Données</b>MySQL, MariaDB, PostgreSQL, SQLite</div>
-<div class="skill-group"><b>Outils</b>Git, GitHub, GitLab, Docker, Linux, Nginx, Postman</div>
-</section>
-<section class="side-block">
-<h2 class="section-title">Méthodes &amp; pratiques</h2>
-<ul class="method-list">
-<li>Conception d'API REST</li>
-<li>POO · MVC · validation</li>
-<li>Tests &amp; qualité du code</li>
-<li>Git · branches · Merge Requests</li>
-<li>CI/CD · documentation</li>
-</ul>
-</section>
-<section class="side-block">
-<h2 class="section-title">Formation</h2>
-<div class="education"><b>Développement web et mobile</b><span>Orange Digital Center / Sonatel Academy<br>En cours · Front-end &amp; back-end</span></div>
-<div class="education"><b>Licence Mathématiques appliquées et Informatique</b><span>Université numérique Cheikh Hamidou Kane (UNCHK)<br>Première année suivie</span></div>
+<main>
+<section><h2 class="section-title">Profil</h2><p class="profile">Développeur web et mobile en formation à Orange Digital Center / Sonatel Academy. Je conçois des applications en travaillant sur les interfaces, la logique métier, les bases de données et l’intégration des fonctionnalités. Je m’intéresse à la structuration du code, à la compréhension des besoins réels, aux tests et à la qualité des solutions livrées.</p></section>
+<section><h2 class="section-title">Compétences techniques</h2><div class="skills">
+<div class="skill"><b>Langages :</b> PHP, JavaScript, TypeScript, HTML5, CSS3</div>
+<div class="skill"><b>Frameworks :</b> Laravel, Vue.js, Node.js, Express</div>
+<div class="skill"><b>Bases de données :</b> MySQL, MariaDB, PostgreSQL, SQLite</div>
+<div class="skill"><b>Outils :</b> Git, GitHub, GitLab, Docker, Linux, Nginx, Postman</div>
+<div class="skill"><b>Développement :</b> API REST, POO, MVC, validation, tests</div>
+<div class="skill"><b>Collaboration :</b> Git, branches, Merge Requests, CI/CD, documentation</div>
+</div></section>
+<section><h2 class="section-title">Projets sélectionnés</h2><div class="projects">
+<article class="project"><span class="project-number">01</span><div class="project-head"><h3>SunuGox</h3><span class="type">Plateforme civique</span></div><p>Application de signalement et de suivi des problèmes urbains. Les citoyens transmettent des signalements et les services concernés suivent leur prise en charge jusqu’à la résolution.</p><div class="stack">PHP · Laravel · JavaScript · Base de données relationnelle</div></article>
+<article class="project"><span class="project-number">02</span><div class="project-head"><h3>FlexPay Sénégal</h3><span class="type">Fintech · QR Code</span></div><p>Portefeuille numérique avec gestion des rôles, dépôts, transferts entre utilisateurs et historique des transactions. Parcours de transfert par QR Code.</p><div class="stack">Laravel · PHP · Inertia · Vue.js · MariaDB · QR Code</div></article>
+<article class="project"><span class="project-number">03</span><div class="project-head"><h3>Réservation-Salles</h3><span class="type">Application métier</span></div><p>Gestion des salles et réservations : validation des demandes, règles de disponibilité, prévention des chevauchements et suivi des opérations.</p><div class="stack">Laravel · PHP · PostgreSQL · Docker · GitLab CI</div></article>
+<article class="project"><span class="project-number">04</span><div class="project-head"><h3>Fondé 44</h3><span class="type">Commerce · Mobile-first</span></div><p>Application de gestion et de vente de produits alimentaires, pensée pour simplifier la présentation des produits, les commandes et le suivi d’activité sur téléphone.</p><div class="stack">Laravel · Vue.js · PWA · API · Base de données</div></article>
+</div></section>
+<section class="bottom">
+<div><h2 class="section-title">Formation</h2>
+<div class="education"><b>Développement web et mobile</b><span>Orange Digital Center / Sonatel Academy · En cours<br>Parcours front-end et back-end</span></div>
+<div class="education"><b>Licence Mathématiques appliquées et Informatique</b><span>Université numérique Cheikh Hamidou Kane (UNCHK) · Première année suivie</span></div>
 <div class="education"><b>Baccalauréat S2</b><span>Lycée El Hadji Ibrahima Diop, Yeumbeul · 2024</span></div>
-</section>
-<section class="side-block">
-<h2 class="section-title">Langues &amp; intérêts</h2>
-<div class="languages">Français · Anglais (niveau à préciser)<br>Veille technologique · Projets numériques · Open source</div>
-<p class="availability">Ouvert aux opportunités de stage, d'alternance et de collaboration.</p>
-</section>
-</aside>
 </div>
-<footer class="footer"><span>MKC DIGITAL LAB · CURRICULUM VITAE</span><span>DAKAR, SÉNÉGAL · 2026</span></footer>
+<div><h2 class="section-title">Autres informations</h2>
+<div class="education"><b>Langues</b><span>Français · Anglais (niveau à préciser)</span></div>
+<div class="education"><b>Centres d’intérêt</b><span>Veille technologique · Projets numériques · Open source · Apprentissage continu</span></div>
+<p class="availability">Ouvert aux opportunités de stage, d’alternance et de collaboration.</p>
+</div>
+</section>
 </main>
+<footer><span>MKC DIGITAL LAB · CURRICULUM VITAE</span><span>DAKAR, SÉNÉGAL · 2026</span></footer>
+</article>
 </body>
 </html>
